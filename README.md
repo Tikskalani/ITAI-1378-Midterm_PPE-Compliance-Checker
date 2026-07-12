@@ -99,7 +99,7 @@ The 0.85 mAP@50 was our target; V1 reached 0.61 on a small 1,416-image dataset, 
 ---
 
 ## Reproducing the results
-The training runs in `notebooks/train_ppe_colab.ipynb` on Google Colab with a T4 GPU. It fine-tunes YOLO11 on the Construction-PPE dataset (which downloads automatically), evaluates on the held-out set, and runs the compliance demo on sample images. The trained weights and evaluation plots are saved under `docs/results/`.
+The training runs in `notebooks/02_training.ipynb` on Google Colab with a T4 GPU. It fine-tunes YOLO11 on the Construction-PPE dataset (which downloads automatically), evaluates on the held-out set, and runs the compliance demo on sample images. The trained weights and evaluation plots are saved under `docs/results/`.
 
 Run the trained model on any image:
 
@@ -116,8 +116,8 @@ ITAI-1378-Midterm_PPE-Compliance-Checker/
 ├── requirements.txt
 ├── notebooks/
 │   ├── 01_exploration.ipynb          data exploration + pretrained baseline
-│   ├── train_ppe_colab.ipynb         training + evaluation + compliance demo
-│   └── train_ppe_colab_EXECUTED.ipynb   the run with outputs (mAP@50 0.61)
+│   ├── 02_training.ipynb             training + evaluation + compliance demo
+│   └── 03_training_results.ipynb     the run with outputs (mAP@50 0.61)
 ├── src/
 │   └── predict_compliance.py         run the trained model on any image
 ├── data/
