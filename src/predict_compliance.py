@@ -1,7 +1,7 @@
 """
 PPE Compliance Checker — standalone inference.
 
-After training with notebooks/train_ppe_colab.ipynb you get a `best.pt`.
+After training with notebooks/02_training.ipynb you get a `best.pt`.
 This script runs that model on an image (or a folder) and labels each worker
 Compliant / Non-compliant, then saves annotated copies.
 
